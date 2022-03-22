@@ -1,0 +1,25 @@
+### add without teg
+
+POST http://127.0.0.1:8080
+content-type: application/json
+
+{
+  "title": "kirill4222",
+  "text": "kirill@yandex.ru"
+}
+
+### add with teg
+
+POST http://127.0.0.1:8080
+content-type: application/json
+
+{
+  "title": "kirill4",
+  "text": "kirill@yandex.ru",
+  "tag": "animals"
+}
+
+### Get all data
+
+GET http://127.0.0.1:8080
+content-type: application/json
