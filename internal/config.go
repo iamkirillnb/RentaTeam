@@ -3,7 +3,6 @@ package internal
 import (
 	"fmt"
 	"github.com/iamkirillnb/Rentateam/internal/entities"
-	"github.com/iamkirillnb/Rentateam/pkg/http"
 	"github.com/ilyakaznacheev/cleanenv"
 	"log"
 	"sync"
@@ -12,7 +11,7 @@ import (
 
 type Config struct {
 	DbConfig entities.DbRepo   `yaml:"postgres_local"`
-	Server   http.ServerConfig `yaml:"server_http"`
+	Server   ServerConfig `yaml:"server_http"`
 }
 
 type ServerConfig struct {
